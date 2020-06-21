@@ -147,8 +147,6 @@ namespace TOAWXML
                 dgvEquipView.Columns[19].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
                 //CENTER-JUSTIFY DGV CONTENT
-                //dgvEquipView.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-                //dgvEquipView.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 dgvEquipView.Columns[2].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 dgvEquipView.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 dgvEquipView.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
