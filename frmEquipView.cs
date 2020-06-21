@@ -45,6 +45,7 @@ namespace TOAWXML
                     return;
                 }
             }
+            //DAFAQQQ!!!!!!
 
             FilePath = TOAWEquipViewer.Properties.Settings.Default.FilePath.ToString();
 
