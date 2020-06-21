@@ -11,8 +11,6 @@ using System.Windows.Forms;
 
 namespace TOAWXML
 {
-    
-
     public partial class frmMissingEqpFile : Form
     {
         public frmMissingEqpFile()
@@ -44,7 +42,6 @@ namespace TOAWXML
 
                 this.Close();
             }
-
             else
             {
                 Application.Exit();

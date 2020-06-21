@@ -317,7 +317,6 @@ namespace TOAWXML
                 TOAWEquipViewer.Properties.Settings.Default.Save();
                 CallOnLoad();
             }
-            
         }
 
         public void CloseApp()
