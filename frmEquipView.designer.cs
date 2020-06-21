@@ -40,6 +40,7 @@
             // dgvEquipView
             // 
             this.dgvEquipView.AllowUserToAddRows = false;
+            this.dgvEquipView.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
@@ -49,13 +50,13 @@
             this.dgvEquipView.Name = "dgvEquipView";
             this.dgvEquipView.RowHeadersWidth = 25;
             this.dgvEquipView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgvEquipView.Size = new System.Drawing.Size(1211, 563);
+            this.dgvEquipView.Size = new System.Drawing.Size(1211, 645);
             this.dgvEquipView.TabIndex = 0;
             this.dgvEquipView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvEquipView_CellFormatting);
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(12, 585);
+            this.btnClose.Location = new System.Drawing.Point(12, 679);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(91, 33);
             this.btnClose.TabIndex = 1;
@@ -66,7 +67,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(1132, 585);
+            this.btnSave.Location = new System.Drawing.Point(1132, 679);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(91, 33);
             this.btnSave.TabIndex = 2;
@@ -77,14 +78,14 @@
             // 
             // txtEquipFile
             // 
-            this.txtEquipFile.Location = new System.Drawing.Point(221, 592);
+            this.txtEquipFile.Location = new System.Drawing.Point(221, 686);
             this.txtEquipFile.Name = "txtEquipFile";
             this.txtEquipFile.Size = new System.Drawing.Size(902, 20);
             this.txtEquipFile.TabIndex = 3;
             // 
             // btnEqpFile
             // 
-            this.btnEqpFile.Location = new System.Drawing.Point(136, 583);
+            this.btnEqpFile.Location = new System.Drawing.Point(136, 677);
             this.btnEqpFile.Name = "btnEqpFile";
             this.btnEqpFile.Size = new System.Drawing.Size(69, 39);
             this.btnEqpFile.TabIndex = 4;
@@ -96,13 +97,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1238, 630);
+            this.ClientSize = new System.Drawing.Size(1238, 724);
             this.ControlBox = false;
             this.Controls.Add(this.btnEqpFile);
             this.Controls.Add(this.txtEquipFile);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.dgvEquipView);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmEquipView";
             this.ShowIcon = false;
             this.Text = "Equipment Viewer";
