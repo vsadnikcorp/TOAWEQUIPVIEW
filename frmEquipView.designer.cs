@@ -41,15 +41,18 @@
             // 
             this.dgvEquipView.AllowUserToAddRows = false;
             this.dgvEquipView.AllowUserToDeleteRows = false;
+            this.dgvEquipView.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
             this.dgvEquipView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvEquipView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEquipView.Location = new System.Drawing.Point(12, 12);
+            this.dgvEquipView.MultiSelect = false;
             this.dgvEquipView.Name = "dgvEquipView";
             this.dgvEquipView.RowHeadersWidth = 25;
             this.dgvEquipView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvEquipView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvEquipView.Size = new System.Drawing.Size(1211, 645);
             this.dgvEquipView.TabIndex = 0;
             this.dgvEquipView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvEquipView_CellFormatting);
