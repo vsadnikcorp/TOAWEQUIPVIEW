@@ -6,6 +6,9 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using System.Xml.Linq;
+//using TOAWXML;
+//using TOAWTac;
+//using TOAWmenu;
 
 namespace TOAWXML
 
@@ -30,22 +33,18 @@ namespace TOAWXML
         {
             string FilePath;
 
-            //TOAWEquipViewer.Properties.Settings.Default.FilePath = "";
-            //TOAWEquipViewer.Properties.Settings.Default.Save();
-
             FilePath = TOAWEquipViewer.Properties.Settings.Default.FilePath.ToString();
             dgvEquipView.DataSource = null;
 
             if (FilePath == "")
             {
-                frmMissingEqpFile loadfileform = new frmMissingEqpFile();
+                frmMissingEqpViewFile loadfileform = new frmMissingEqpViewFile();
                 loadfileform.ShowDialog();
                 if (TOAWEquipViewer.Properties.Settings.Default.FilePath.ToString() == "")
                     {
                     return;
                 }
             }
-            //DAFAQQQ!!!!!!
 
             FilePath = TOAWEquipViewer.Properties.Settings.Default.FilePath.ToString();
 

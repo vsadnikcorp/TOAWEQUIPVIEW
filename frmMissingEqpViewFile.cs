@@ -8,12 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+//using TOAWXML;
+//using TOAWTac;
+//using TOAWmenu;
 
 namespace TOAWXML
 {
-    public partial class frmMissingEqpFile : Form
+    public partial class frmMissingEqpViewFile : Form
     {
-        public frmMissingEqpFile()
+        public frmMissingEqpViewFile()
         {
             InitializeComponent();
             string pathstring = "Please load a TOAW *.eqp file." + Environment.NewLine + Environment.NewLine;
@@ -39,7 +42,7 @@ namespace TOAWXML
                 FilePath = TOAWEquipViewer.Properties.Settings.Default.FilePath.ToString();
                 TOAWEquipViewer.Properties.Settings.Default.FilePath = file.FileName;
                 TOAWEquipViewer.Properties.Settings.Default.Save();
-
+                
                 this.Close();
             }
             else

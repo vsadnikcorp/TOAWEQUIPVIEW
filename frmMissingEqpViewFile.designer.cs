@@ -1,6 +1,6 @@
 ﻿namespace TOAWXML
 {
-    partial class frmMissingEqpFile
+    partial class frmMissingEqpViewFile
     {
         /// <summary>
         /// Required designer variable.
